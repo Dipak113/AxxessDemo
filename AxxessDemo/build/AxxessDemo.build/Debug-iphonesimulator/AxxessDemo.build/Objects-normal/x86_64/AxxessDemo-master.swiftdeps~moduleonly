@@ -1,0 +1,16 @@
+version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+options: "866942236d6cf01eaf09ff15d721aa09"
+build_time: [1596617988, 137741000]
+inputs:
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/AxxessDemo/AxxessDemo/Controllers/DetailViewController.swift": [1596617987, 206863253]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/AxxessDemo/AxxessDemo/Model/ServerManager.swift": [1596611424, 138743594]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/AxxessDemo/AxxessDemo/Model/BusinessObjects.swift": [1596610854, 371447047]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/AxxessDemo/AxxessDemo/AppDelegate/AppDelegate.swift": [1596609051, 722122137]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/AxxessDemo/AxxessDemo/Other/ImageViewExtension.swift": [1596609403, 571448208]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/AxxessDemo/AxxessDemo/Other/Constants.swift": [1596609403, 803589830]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/AxxessDemo/AxxessDemo/ViewModel/ListViewModel.swift": [1596609176, 78778542]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/AxxessDemo/AxxessDemo/Model/RealmManager.swift": [1596609403, 794477071]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/AxxessDemo/AxxessDemo/Controllers/ListViewController.swift": [1596617973, 156910581]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/AxxessDemo/AxxessDemo/Other/ControllerExtention.swift": [1596609403, 561553117]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/AxxessDemo/AxxessDemo/View/cell/ListTableViewCell.swift": [1596617317, 822178625]
+  "/Users/dipakdhondge/Documents/iOS DIp/iOS/iOSIntervIewStudy/InteriewPlay/AxxessDemo/AxxessDemo/AppDelegate/SceneDelegate.swift": [1596610495, 680057778]
