@@ -99,8 +99,10 @@ extension ListViewController: UITableViewDataSource {
 }
 extension String {
 func validateUrl() -> Bool {
-  let urlRegEx = "(http|https)://((\\w)*|([0-9]*)|([-|_])*)+([\\.|/]((\\w)*|([0-9]*)|([-|_])*))+"
-    return NSPredicate(format: "SELF MATCHES %@", urlRegEx).evaluate(with: self)
+    let urlRegEx = "^(https?://)?(www\\.)?([-a-z0-9]{1,63}\\.)*?[a-z0-9][-a-z0-9]{0,61}[a-z0-9]\\.[a-z]{2,6}(/[-\\w@\\+\\.~#\\?&/=%]*)?$"
+     let urlTest = NSPredicate(format:"SELF MATCHES %@", urlRegEx)
+     let result = urlTest.evaluate(with: self)
+     return result
   }
 }
 
