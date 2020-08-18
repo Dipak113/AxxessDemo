@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import RealmSwift
+import Realm
 class DetailViewController: UIViewController {
     var listObject = ListObject()
     
@@ -32,6 +33,30 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         setupDetailView()
         self.title = "Detail View"
+        //Navigation right side bar button set up
+        let edit = UIBarButtonItem(barButtonSystemItem:.edit, target: self, action: #selector(DetailViewController.removeItemFromRelam))
+        self.navigationItem.rightBarButtonItem = edit
+    }
+    
+    /// Function to delete item from Detail View Controller
+    @objc func removeItemFromRelam(){
+       do {
+           let realm = try Realm()
+        let object = realm.objects(ListObject.self).filter("id = %@", String(listObject.id)).first
+
+           try! realm.write {
+               if let obj = object {
+                   realm.delete(obj)
+               }
+           }
+       } catch let error as NSError {
+           // handle error
+           print("error - \(error.localizedDescription)")
+       }
+        
+        NotificationCenter.default.post(name: Notification.Name("NotificationIdentifier"), object: nil)
+        self.navigationController?.popViewController(animated: true)
+        
     }
     
     /// Function to setup Detail View Controller
